@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment Showcase</title>
     <style>
-        /* Reset some default styles */
+
         * {
             margin: 0;
             padding: 0;
@@ -15,17 +15,56 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-image: url('Assets/Leonardo_Kino_XL_6_images_for_professional_assignments_for_add_0.jpg');
+            background-image: url('Assets/wallpaperflare.com_wallpaper (6).jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-color: rgba(0, 0, 0, 0.75);
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
             min-height: 100vh;
             padding: 40px;
         }
+
+        header {
+            text-align: center;
+            color: #3048e1;
+            margin-bottom: 40px;
+            transition: backdrop-filter 0.3s ease;
+        }
+
+        header:hover {
+            backdrop-filter: blur(10px);
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #ff0c0c;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            transition: backdrop-filter 0.3s ease;
+        }
+
+        header p:hover {
+            backdrop-filter: blur(10px);
+        }
+
+        header .description {
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 90%;
+            margin: 0 auto;
+            transition: backdrop-filter 0.3s ease;
+        }
+
+        header .description:hover {
+            backdrop-filter: blur(10px);
+        }
+
 
         .container {
             width: 100%;
@@ -33,6 +72,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             grid-gap: 30px;
+            flex-grow: 1;
         }
 
         .case-box {
@@ -108,6 +148,24 @@
             background-color: rgba(255, 255, 255, 0.8);
         }
 
+        footer {
+            padding: 5px;
+            text-align: center;
+            font-style: italic;
+            font-size: 14px;
+            color: #333;
+            background: #ffffff;
+            border-radius: 40px;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        footer p:last-child {
+            margin-bottom: 0;
+        }
+
         @media (max-width: 768px) {
             .container {
                 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -121,11 +179,19 @@
     </style>
 </head>
 <body>
+<header>
+    <h1>Assignment Showcase</h1>
+    <p>Explore our showcased assignments and projects.</p>
+    <div class="description">
+        This showcase highlights a selection of HTML and CSS assignments completed by students at our university. These assignments were designed to challenge students' understanding of web development fundamentals, responsive design, and modern styling techniques. Each case showcases the student's ability to create visually appealing and functional web pages using a variety of HTML elements, CSS properties, and layout strategies. We hope these examples inspire and encourage you to continue exploring the world of web development.
+    </div>
+</header>
+
 <div class="container">
     <div class="case-box">
         <img src="Assets/wallpaperflare.com_wallpaper%20(4).jpg" alt="Case 1">
         <div class="buttons">
-            <a href="https://github.com/your-username/case1" target="_blank" class="view-code">View Code</a>
+            <a href="https://github.com/orion343dream/HTML-CSS-Assignment_04/tree/main/Cases/case%2001" target="_blank" class="view-code">View Code</a>
             <a href="Cases/case 01/index.html" target="_blank" class="view-project">View Project</a>
         </div>
         <div class="label">Case 1</div>
@@ -133,7 +199,7 @@
     <div class="case-box">
         <img src="Assets/purple-flowers-8500x4912-12102.jpg" alt="Case 2">
         <div class="buttons">
-            <a href="https://github.com/your-username/case2" target="_blank" class="view-code">View Code</a>
+            <a href="https://github.com/orion343dream/HTML-CSS-Assignment_04/tree/main/Cases/case%2002" target="_blank" class="view-code">View Code</a>
             <a href="Cases/case 02/index.html" target="_blank" class="view-project">View Project</a>
         </div>
         <div class="label">Case 2</div>
@@ -141,7 +207,7 @@
     <div class="case-box">
         <img src="Assets/wallpaperflare.com_wallpaper%20(4).jpg" alt="Case 3">
         <div class="buttons">
-            <a href="https://github.com/your-username/case3" target="_blank" class="view-code">View Code</a>
+            <a href="https://github.com/orion343dream/HTML-CSS-Assignment_04/tree/main/Cases/case%2003" target="_blank" class="view-code">View Code</a>
             <a href="Cases/case 03/index.html" target="_blank" class="view-project">View Project</a>
         </div>
         <div class="label">Case 3</div>
@@ -149,7 +215,7 @@
     <div class="case-box">
         <img src="Assets/purple-flowers-8500x4912-12102.jpg" alt="Case 4">
         <div class="buttons">
-            <a href="https://github.com/your-username/case4" target="_blank" class="view-code">View Code</a>
+            <a href="https://github.com/orion343dream/HTML-CSS-Assignment_04/tree/main/Cases/case%2004" target="_blank" class="view-code">View Code</a>
             <a href="Cases/case 04/index.html" target="_blank" class="view-project">View Project</a>
         </div>
         <div class="label">Case 4</div>
@@ -157,7 +223,7 @@
     <div class="case-box">
         <img src="Assets/wallpaperflare.com_wallpaper%20(4).jpg" alt="Case 5">
         <div class="buttons">
-            <a href="https://github.com/your-username/case5" target="_blank" class="view-code">View Code</a>
+            <a href="https://github.com/orion343dream/HTML-CSS-Assignment_04/tree/main/Cases/case%2005" target="_blank" class="view-code">View Code</a>
             <a href="Cases/case 05/html.html" target="_blank" class="view-project">View Project</a>
         </div>
         <div class="label">Case 5</div>
@@ -165,11 +231,16 @@
     <div class="case-box">
         <img src="Assets/purple-flowers-8500x4912-12102.jpg" alt="Case 6">
         <div class="buttons">
-            <a href="https://github.com/your-username/case6" target="_blank" class="view-code">View Code</a>
+            <a href="https://github.com/orion343dream/HTML-CSS-Assignment_04/tree/main/Cases/case%2006" target="_blank" class="view-code">View Code</a>
             <a href="Cases/case 06/index.html" target="_blank" class="view-project">View Project</a>
         </div>
         <div class="label">Case 6</div>
     </div>
-</div>
+</div><br>
+
+<footer>
+    <br>
+    <p>&copy; Developed by ORION. All rights reserved.</p>
+</footer>
 </body>
 </html>
