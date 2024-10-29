@@ -1,1 +1,1 @@
-# HTML-CSS-Assignment_04
+This showcase highlights a selection of HTML and CSS assignments completed by students at our university. These assignments were designed to challenge students' understanding of web development fundamentals, responsive design, and modern styling techniques. Each case showcases the student's ability to create visually appealing and functional web pages using a variety of HTML elements, CSS properties, and layout strategies. We hope these examples inspire and encourage you to continue exploring the world of web development.
